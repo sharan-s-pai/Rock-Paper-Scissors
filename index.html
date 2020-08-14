@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <link rel="stylesheet" href="style.css">
+</head>
+<body style='background-color:#141414;color: white;' >
+    <div class="container">
+       <div class="text-center mb-4 bg-secondary mt-2 p-1" style="border-radius: .25rem;" ><h1 class="display-3" style='color: aliceblue;'>
+           ROCK PAPER SCISSORS GAME
+       </h1></div>
+       <div class="clearfix"><button id="restart" class="btn btn-danger mb-3 float-right">Restart</button></div>
+       <div id="result-announce" class="m-3"></div>
+    <div class="selections">
+        <button class="selection" data-selection='rock'>✊</button>
+        <button class="selection" data-selection='paper'>✋</button>
+        <button class="selection" data-selection='scissors'>✌</button>
+    </div>
+    <div class="results">
+        <div id="comp-result">COMPUTER
+            <span class='result-score' data-score-computer>0</span>
+        </div>
+        <div data-final-column >YOU
+            <span class='result-score' data-score-user>0</span>
+        </div>
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
